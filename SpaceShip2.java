@@ -37,13 +37,13 @@ public class SpaceShip2 extends Player
     public SpaceShip2()
     {
         setRotation(getRotation() - 90);
-        shipSprite.setColor(Color.RED);
+        shipSprite.setColor(greenfoot.Color.RED);
         shipSprite.drawPolygon(edge1X, edge1Y, 2);
         shipSprite.drawPolygon(edge2X, edge2Y, 2);
         shipSprite.drawPolygon(baseX, baseY, 2);
         setImage(shipSprite);
 
-        shipOnSprite.setColor(Color.RED);
+        shipOnSprite.setColor(greenfoot.Color.RED);
         shipOnSprite.drawPolygon(edge1X, edge1Y, 2);
         shipOnSprite.drawPolygon(edge2X, edge2Y, 2);
         shipOnSprite.drawPolygon(baseX, baseY, 2);

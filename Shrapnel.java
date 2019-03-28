@@ -15,7 +15,7 @@ public class Shrapnel extends Actor
 	public Shrapnel()
 	{
 		GreenfootImage shrapnel = new GreenfootImage(3,3);
-		shrapnel.setColor(Color.WHITE);
+		shrapnel.setColor(greenfoot.Color.WHITE);
 		shrapnel.fill();
 
 		setImage(shrapnel);

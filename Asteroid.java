@@ -40,7 +40,7 @@ public class Asteroid extends AsteroidSuper
         if (size == 0)
         {
             GreenfootImage asteroid = new GreenfootImage(smallDimension,smallDimension);
-            asteroid.setColor(Color.WHITE);
+            asteroid.setColor(greenfoot.Color.WHITE);
             int[] asteroidX = {1, 6, 17, 29, 25, 29, 15};
             int[] asteroidY = {13, 29, 27, 29, 12, 1, 1};
             asteroid.drawPolygon(asteroidX, asteroidY, 7);
@@ -134,42 +134,15 @@ public class Asteroid extends AsteroidSuper
 
     public void explosion()
     {
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
-        getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
+        for (int i = 0; i < 15; i++){
+            getWorld().addObject(new Shrapnel(), getX() + randX, getY() + randY);
+        }
     }
 
-        public GreenfootImage largeVariation0()
+    public GreenfootImage largeVariation0()
     {
         GreenfootImage asteroid = new GreenfootImage(largeDimension,largeDimension);
-        asteroid.setColor(Color.WHITE);
+        asteroid.setColor(greenfoot.Color.WHITE);
         int[] asteroidX = {1, 9, 32, 58, 66, 106, 123, 129, 120, 129, 129, 115, 87, 64, 33, 17, 3, 1};
         int[] asteroidY = {34, 13, 1, 1, 14, 1, 5, 18, 44, 81, 92, 116, 127, 129, 93, 129, 113, 90};
         asteroid.drawPolygon(asteroidX, asteroidY, 18);
@@ -180,7 +153,7 @@ public class Asteroid extends AsteroidSuper
     public GreenfootImage largeVariation1()
     {
         GreenfootImage asteroid = new GreenfootImage(largeDimension,largeDimension);
-        asteroid.setColor(Color.WHITE);        
+        asteroid.setColor(greenfoot.Color.WHITE);        
         int[] asteroidX = {34, 13, 1, 1, 25, 1, 5, 18, 44, 81, 92, 116, 127, 129, 93, 129, 113, 90};
         int[] asteroidY = {1, 9, 32, 58, 66, 106, 123, 129, 120, 129, 129, 115, 87, 64, 33, 17, 3, 1};
         asteroid.drawPolygon(asteroidX, asteroidY, 18);
@@ -192,7 +165,7 @@ public class Asteroid extends AsteroidSuper
     public GreenfootImage mediumVariation0()
     {
         GreenfootImage asteroid = new GreenfootImage(mediumDimension,mediumDimension);
-        asteroid.setColor(Color.WHITE);
+        asteroid.setColor(greenfoot.Color.WHITE);
         int[] asteroidX = {1, 25, 60, 74, 74, 50, 50, 50, 15, 1, 1, 24};
         int[] asteroidY = {15, 1, 1, 20, 60, 50, 67, 74, 74, 50, 35, 15};
         asteroid.drawPolygon(asteroidX, asteroidY, 12);
@@ -204,7 +177,7 @@ public class Asteroid extends AsteroidSuper
     public GreenfootImage mediumVariation1()
     {
         GreenfootImage asteroid = new GreenfootImage(mediumDimension,mediumDimension);
-        asteroid.setColor(Color.WHITE);
+        asteroid.setColor(greenfoot.Color.WHITE);
         int[] asteroidX = {15, 1, 1, 20, 66, 50, 67, 74, 74, 50, 35, 30};
         int[] asteroidY = {1, 25, 60, 74, 68, 50, 50, 50, 15, 1, 1, 24};
                             
